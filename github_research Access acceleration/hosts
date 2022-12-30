@@ -1,0 +1,50 @@
+
+# update: 20221230
+# Github Hosts
+# domain: github.com
+
+#一般来说前四个会在一定时间后改变，当访问速度降下来时，可以先尝试修改前四个的访问地址
+
+# Generally speaking, the first four will change after a certain period of time
+# when the access speed decreases
+# you can try to modify the first four access addresses first
+140.82.112.4 github.com
+140.82.113.9 nodeload.github.com
+140.82.113.5 api.github.com
+140.82.112.9 codeload.github.com
+
+185.199.108.133 raw.github.com
+185.199.108.153 training.github.com
+185.199.108.153 assets-cdn.github.com
+185.199.108.153 documentcloud.github.com
+140.82.114.17 help.github.com
+
+# domain: githubstatus.com
+185.199.108.153 githubstatus.com
+
+# domain: fastly.net
+199.232.69.194 github.global.ssl.fastly.net
+
+# domain: githubusercontent.com
+185.199.108.133 raw.githubusercontent.com
+185.199.108.154 pkg-containers.githubusercontent.com
+185.199.108.133 cloud.githubusercontent.com
+185.199.108.133 gist.githubusercontent.com
+185.199.108.133 marketplace-screenshots.githubusercontent.com
+185.199.108.133 repository-images.githubusercontent.com
+185.199.108.133 user-images.githubusercontent.com
+185.199.108.133 desktop.githubusercontent.com
+185.199.108.133 avatars.githubusercontent.com
+185.199.108.133 avatars0.githubusercontent.com
+185.199.108.133 avatars1.githubusercontent.com
+185.199.108.133 avatars2.githubusercontent.com
+185.199.108.133 avatars3.githubusercontent.com
+185.199.108.133 avatars4.githubusercontent.com
+185.199.108.133 avatars5.githubusercontent.com
+185.199.108.133 avatars6.githubusercontent.com
+185.199.108.133 avatars7.githubusercontent.com
+185.199.108.133 avatars8.githubusercontent.com
+# End of the section
+
+#please star me: https://github.com/HY-Kevin/share_exploring
+#Thank you 
