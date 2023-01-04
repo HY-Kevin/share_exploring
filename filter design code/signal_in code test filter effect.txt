@@ -1,10 +1,10 @@
 %测试信号生成code 检验37阶卡塞尔窗滤波器效果
 
 k=16;
-Fs = 10000000;%采样频率10MHz
+Fs = 10000000;%采样频率10MHz x=(randn(1, 200)+3) / 6 * 10;
 len = 1000;
 t = (0:len-1)/Fs;
-y = sin(2*pi*1000000*t)+cos(2*pi*3000000*t);
+y = sin(2*pi*1000000*t)+sin(2*pi*2700000*t)+sin(2*pi*2500000*t)+cos(2*pi*3000000*t)+sin(2*pi*1800000*t)+sin(2*pi*3800000*t)+sin(2*pi*3200000*t)+sin(2*pi*4000000*t)+sin(2*pi*2800000*t)+(randn(1, 1000))/6;%并掺入随机噪声
 % y = sin(2*pi*1000000*t)+sin(2*pi*3000000*t)+sin(2*pi*2500000*t);
 plot(t,y);
 y_ad = y/max(abs(y));
@@ -25,11 +25,31 @@ coeff =[-0.000670725257353326,-0.000792999076599835,0.000266038144856742,0.00242
 %生成的滤波系数
 out =conv(y,coeff);%卷积
 
-subplot(2,1,1);
-plot(signal);
+% draw waveform
+figure(1);
+subplot(2,2,1);
+plot(y);
 xlabel('滤波前');
-axis([0 200 -4 4]);%调整横纵比
-subplot(2,1,2);
+axis([0 200 -6 6]);%调整横纵比
+subplot(2,2,2);
 plot(out);
 xlabel('滤波后');
-axis([0 200 -2 2]);
+axis([0 200 -4 4]);
+
+%频谱图
+%figure(2);
+df = Fs / ( len - 1 );
+f = ( 0 : len ) * df;
+Y1 = fft(y);
+subplot(2,2,3);
+plot(f(1:len/2),abs(Y1(1:len/2)),'r','LineWidth',1.2);
+set(gca,'LineWidth',1.2);
+
+Y2 = fft(out);
+subplot(2,2,4);
+plot(f(1:len/2),abs(Y2(1:len/2)),'r','LineWidth',1.2);
+set(gca,'LineWidth',1.2);
+
+
+
+
