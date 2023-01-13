@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ASK_process.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd" \
+"../../../../ASK_process.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" \
+
+# Do not sort compile order
+nosort
