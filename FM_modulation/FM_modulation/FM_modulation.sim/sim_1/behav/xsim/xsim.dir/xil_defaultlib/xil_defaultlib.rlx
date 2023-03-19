@@ -1,0 +1,11 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/ele_match/FM_modulation/FM_modulation/FM_modulation.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1679142150,verilog,,D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/DDS_Mod.v,,blk_mem_gen_0,,,,,,,,
+D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd,1679196940,vhdl,,,,mult_gen_0,,,,,,,,
+D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/DDS_Mod.v,1679199161,verilog,,D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/FM_Mod.v,,DDS_Mod,,,,,,,,
+D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/FM_Mod.v,1679158429,verilog,,D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/TOP.v,,FM_Mod,,,,,,,,
+D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/TOP.v,1679142474,verilog,,D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/tb_TOP.v,,TOP,,,,,,,,
+D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/tb_TOP.v,1679142690,verilog,,,,tb_TOP,,,,,,,,

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/share_daily/2ASK_process_vivado/ASK_process.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_gen_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/share_daily/2ASK_process_vivado/ASK_process.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dds_compiler_0'

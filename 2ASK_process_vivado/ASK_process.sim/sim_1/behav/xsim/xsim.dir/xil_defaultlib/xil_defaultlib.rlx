@@ -2,8 +2,8 @@
 2019.2
 Nov  6 2019
 21:57:16
-D:/ele_match/ASK_signal_process/ASK_process/ASK_process.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
-D:/ele_match/ASK_signal_process/ASK_process/ASK_process.srcs/sim_1/new/Tb_ASK.v,1673605457,verilog,,,,Tb_ASK,,,,,,,,
-D:/ele_match/ASK_signal_process/ASK_process/ASK_process.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd,1673602861,vhdl,,,,dds_compiler_0,,,,,,,,
-D:/ele_match/ASK_signal_process/ASK_process/ASK_process.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd,1673595344,vhdl,,,,mult_gen_0,,,,,,,,
-D:/ele_match/ASK_signal_process/ASK_process/ASK_process.srcs/sources_1/new/ASK_modulation.v,1673605310,verilog,,D:/ele_match/ASK_signal_process/ASK_process/ASK_process.srcs/sim_1/new/Tb_ASK.v,,ASK_modulation,,,,,,,,
+D:/share_daily/2ASK_process_vivado/ASK_process.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/share_daily/2ASK_process_vivado/ASK_process.srcs/sim_1/new/Tb_ASK.v,1673611244,verilog,,,,Tb_ASK,,,,,,,,
+D:/share_daily/2ASK_process_vivado/ASK_process.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd,1673602861,vhdl,,,,dds_compiler_0,,,,,,,,
+D:/share_daily/2ASK_process_vivado/ASK_process.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd,1673595344,vhdl,,,,mult_gen_0,,,,,,,,
+D:/share_daily/2ASK_process_vivado/ASK_process.srcs/sources_1/new/ASK_modulation.v,1673611224,verilog,,D:/share_daily/2ASK_process_vivado/ASK_process.srcs/sim_1/new/Tb_ASK.v,,ASK_modulation,,,,,,,,

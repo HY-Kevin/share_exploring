@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Mar 19 00:08:58 2023
+# Process ID: 14952
+# Current directory: D:/ele_match/FM_modulation/FM_modulation
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17768 D:\ele_match\FM_modulation\FM_modulation\FM_modulation.xpr
+# Log file: D:/ele_match/FM_modulation/FM_modulation/vivado.log
+# Journal file: D:/ele_match/FM_modulation/FM_modulation\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ele_match/FM_modulation/FM_modulation/FM_modulation.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_TOP.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_TOP/FM_Mod_data}} 
+synth_design -rtl -name rtl_1
+set_property -name {xsim.simulate.log_all_signals} -value {true} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.saif_all_signals} -value {true} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source tb_TOP.tcl
+set_property -name {xsim.simulate.log_all_signals} -value {false} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.saif_all_signals} -value {false} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source tb_TOP.tcl
+current_wave_config {Untitled 3}
+add_wave {{/tb_TOP/TOP_inst/adc_data}} 
+current_wave_config {Untitled 3}
+add_wave {{/tb_TOP/TOP_inst/adc_data}} 
+current_wave_config {Untitled 3}
+log_wave {/tb_TOP/TOP_inst/adc_data} 
+current_wave_config {Untitled 3}
+add_wave {{/tb_TOP/TOP_inst/adc_data}} 
+current_wave_config {Untitled 3}
+add_wave {{/tb_TOP/TOP_inst/adc_data}} 
+current_wave_config {Untitled 3}
+add_wave {{/tb_TOP/TOP_inst/adc_data}} 
+run 1000 us
+close_sim
+launch_simulation
+source tb_TOP.tcl
+current_wave_config {Untitled 4}
+add_wave {{/tb_TOP/TOP_inst/adc_data}} 
+run all
+run 1000 us
+restart
+run 1000 us
+close_sim
+launch_simulation
+source tb_TOP.tcl
+current_wave_config {Untitled 5}
+add_wave {{/tb_TOP/TOP_inst/adc_data}} 
+restart
+run 1000 us
+close_sim
+launch_simulation
+refresh_design
+launch_simulation
+source tb_TOP.tcl
+current_wave_config {Untitled 6}
+add_wave {{/tb_TOP/TOP_inst/adc_data}} 
+restart
+run 1000 us
+close_sim
+launch_simulation
+refresh_design
+launch_simulation
+source tb_TOP.tcl
+current_wave_config {Untitled 7}
+add_wave {{/tb_TOP/TOP_inst/adc_data}} 
+restart
+run 1000 us
+close_sim

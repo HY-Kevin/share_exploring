@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/DDS_Mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Mod
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/FM_Mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FM_Mod
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ele_match/FM_modulation/FM_modulation/FM_modulation.srcs/sources_1/new/tb_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_TOP

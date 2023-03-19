@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../FM_modulation.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../FM_modulation.srcs/sources_1/new/DDS_Mod.v" \
+"../../../../FM_modulation.srcs/sources_1/new/FM_Mod.v" \
+"../../../../FM_modulation.srcs/sources_1/new/TOP.v" \
+"../../../../FM_modulation.srcs/sources_1/new/tb_TOP.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

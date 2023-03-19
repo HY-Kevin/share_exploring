@@ -1,11 +1,11 @@
 
 { 
-    crc :  11613842408917891001  , 
+    crc :  8824780461886483552  , 
     ccp_crc :  0  , 
     cmdline : " -wto a1edb826b93049559ae4c3ef1f8b3471 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xil_defaultlib -L axi_utils_v2_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_19 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Tb_ASK_behav xil_defaultlib.Tb_ASK xil_defaultlib.glbl" , 
     buildDate : "Nov  6 2019" , 
     buildTime : "21:57:16" , 
-    linkCmd : "E:\\vivado\\Vivado\\2019.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/Tb_ASK_behav/xsimk.exe\"   \"xsim.dir/Tb_ASK_behav/obj/xsim_0.win64.obj\" \"xsim.dir/Tb_ASK_behav/obj/xsim_1.win64.obj\" -L\"E:\\vivado\\Vivado\\2019.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    linkCmd : "E:\\Vitis\\Vivado\\2019.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/Tb_ASK_behav/xsimk.exe\"   \"xsim.dir/Tb_ASK_behav/obj/xsim_0.win64.obj\" \"xsim.dir/Tb_ASK_behav/obj/xsim_1.win64.obj\" -L\"E:\\Vitis\\Vivado\\2019.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
     aggregate_nets : 
     [ 
     ] 

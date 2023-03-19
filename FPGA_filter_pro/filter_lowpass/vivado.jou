@@ -2,27 +2,13 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Mar 14 21:25:27 2023
-# Process ID: 17884
-# Current directory: D:/ele_match/FPGA_filter/filter_lowpass
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8044 D:\ele_match\FPGA_filter\filter_lowpass\filter_lowpass.xpr
-# Log file: D:/ele_match/FPGA_filter/filter_lowpass/vivado.log
-# Journal file: D:/ele_match/FPGA_filter/filter_lowpass\vivado.jou
+# Start of session at: Sat Mar 18 15:57:07 2023
+# Process ID: 6804
+# Current directory: D:/share_daily/FPGA_filter_pro/filter_lowpass
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6296 D:\share_daily\FPGA_filter_pro\filter_lowpass\filter_lowpass.xpr
+# Log file: D:/share_daily/FPGA_filter_pro/filter_lowpass/vivado.log
+# Journal file: D:/share_daily/FPGA_filter_pro/filter_lowpass\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.xpr
+open_project D:/share_daily/FPGA_filter_pro/filter_lowpass/filter_lowpass.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source tb_fir.tcl
-set_property -dict [list CONFIG.Coefficient_File {D:/ele_match/FPGA_filter/fir_coe.coe} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Width {12} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Width {30}] [get_ips fir_compiler_0]
-generate_target all [get_files  D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
-catch { config_ip_cache -export [get_ips -all fir_compiler_0] }
-catch { [ delete_ip_run [get_ips -all fir_compiler_0] ] }
-export_ip_user_files -of_objects [get_files D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
-export_simulation -of_objects [get_files D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -directory D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.ip_user_files/sim_scripts -ip_user_files_dir D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.ip_user_files -ipstatic_source_dir D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.cache/compile_simlib/modelsim} {questa=D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.cache/compile_simlib/questa} {riviera=D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.cache/compile_simlib/riviera} {activehdl=D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-update_compile_order -fileset sources_1
-close_sim
-launch_simulation
-source tb_fir.tcl
-close_sim
