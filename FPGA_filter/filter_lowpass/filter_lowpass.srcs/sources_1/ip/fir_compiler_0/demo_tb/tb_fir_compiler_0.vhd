@@ -109,7 +109,7 @@ architecture tb of tb_fir_compiler_0 is
   signal s_axis_data_tdata_data        : std_logic_vector(15 downto 0) := (others => '0');
 
   -- Data master channel alias signals
-  signal m_axis_data_tdata_data        : std_logic_vector(32 downto 0) := (others => '0');
+  signal m_axis_data_tdata_data        : std_logic_vector(38 downto 0) := (others => '0');
 
 
 begin
@@ -167,9 +167,9 @@ begin
         end loop;
         ip_count := ip_count + 1;
         wait for T_HOLD;
-      -- Input rate is 1 input each 5 clock cycles: drive valid inputs at this rate
+      -- Input rate is 1 input each 50 clock cycles: drive valid inputs at this rate
         s_axis_data_tvalid <= '0';
-        wait for CLOCK_PERIOD * 4;
+        wait for CLOCK_PERIOD * 49;
         exit when ip_count >= samples;
       end loop;
     end procedure drive_data;
@@ -183,7 +183,7 @@ begin
 
     -- Procedure to drive an impulse and let the impulse response emerge on the data master channel
     -- samples is the number of input samples to drive; default is enough for impulse response output to emerge
-    procedure drive_impulse ( samples : natural := 384 ) is
+    procedure drive_impulse ( samples : natural := 1228 ) is
       variable impulse : std_logic_vector(15 downto 0);
     begin
       impulse := (others => '0');  -- initialize unused bits to zero
@@ -206,11 +206,11 @@ begin
     -- Drive another impulse, during which demonstrate use and effect of AXI handshaking signals
     drive_impulse(2);  -- start of impulse; data is now zero
     s_axis_data_tvalid <= '0';
-    wait for CLOCK_PERIOD * 25;  -- provide no data for 5 input samples worth
+    wait for CLOCK_PERIOD * 250;  -- provide no data for 5 input samples worth
     drive_zeros(2);  -- 2 normal input samples
     s_axis_data_tvalid <= '1';
-    wait for CLOCK_PERIOD * 25;  -- provide data as fast as the core can accept it for 5 input samples worth
-    drive_zeros(375);  -- back to normal operation
+    wait for CLOCK_PERIOD * 250;  -- provide data as fast as the core can accept it for 5 input samples worth
+    drive_zeros(1219);  -- back to normal operation
 
     -- End of test
     report "Not a real failure. Simulation finished successfully. Test completed successfully" severity failure;
@@ -256,6 +256,6 @@ begin
   s_axis_data_tdata_data        <= s_axis_data_tdata(15 downto 0);
 
   -- Data master channel alias signals: update these only when they are valid
-  m_axis_data_tdata_data        <= m_axis_data_tdata(32 downto 0) when m_axis_data_tvalid = '1';
+  m_axis_data_tdata_data        <= m_axis_data_tdata(38 downto 0) when m_axis_data_tvalid = '1';
 
 end tb;

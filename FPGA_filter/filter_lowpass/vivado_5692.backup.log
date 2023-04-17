@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Apr 15 18:40:06 2023
+# Process ID: 5692
+# Current directory: D:/ele_match/FPGA_filter/filter_lowpass
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1424 D:\ele_match\FPGA_filter\filter_lowpass\filter_lowpass.xpr
+# Log file: D:/ele_match/FPGA_filter/filter_lowpass/vivado.log
+# Journal file: D:/ele_match/FPGA_filter/filter_lowpass\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.xpr
+INFO: [Project 1-313] Project file moved from 'D:/ele_match/FPGA_filter_pro/filter_lowpass' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vitis/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 924.961 ; gain = 222.211
+update_compile_order -fileset sources_1
+false
+false
+false
+false
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 15 18:52:09 2023...

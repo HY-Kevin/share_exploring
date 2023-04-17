@@ -27,7 +27,7 @@ module project_fir(
     output s_axis_data_tready,
     input [15:0] s_axis_data_tdata,
     output m_axis_data_tvalid,
-    output [31:0] m_axis_data_tdata
+    output [39:0] m_axis_data_tdata
     );
 fir_compiler_0 your_instance_name (
 //     removed .aresetn(reset_n)

@@ -19,7 +19,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 `timescale 1ns / 1ps
 module tb_fir();
-parameter LEN = 1000;
+parameter LEN = 10000;
 reg clk;
 reg reset_n;
 reg [15:0] signal[LEN-1:0];
@@ -30,7 +30,7 @@ wire s_axis_data_tvalid;
 wire s_axis_data_tready;
 wire [15:0] s_axis_data_tdata;
 wire m_axis_data_tvalid;
-wire [31:0] m_axis_data_tdata;
+wire [39:0] m_axis_data_tdata;
 initial begin
     clk = 1'b0;
     reset_n = 1'b0;
@@ -65,7 +65,7 @@ integer k;
 task filter;
     begin
         for(k = 0; k < LEN; k = k+1)
-            #100 data_tdata = signal[k]; //间隔100ns(10MHz)读入一个采样数据
+            #1000 data_tdata = signal[k]; //间隔1us(1MHz)读入一个采样数据
     end
 endtask
 project_fir fir( //例化第3节写的模块

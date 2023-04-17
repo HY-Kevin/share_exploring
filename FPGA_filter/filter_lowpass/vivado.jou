@@ -2,13 +2,17 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat Mar 18 15:57:07 2023
-# Process ID: 6804
-# Current directory: D:/share_daily/FPGA_filter_pro/filter_lowpass
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6296 D:\share_daily\FPGA_filter_pro\filter_lowpass\filter_lowpass.xpr
-# Log file: D:/share_daily/FPGA_filter_pro/filter_lowpass/vivado.log
-# Journal file: D:/share_daily/FPGA_filter_pro/filter_lowpass\vivado.jou
+# Start of session at: Mon Apr 17 21:30:32 2023
+# Process ID: 3772
+# Current directory: D:/ele_match/FPGA_filter/filter_lowpass
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11048 D:\ele_match\FPGA_filter\filter_lowpass\filter_lowpass.xpr
+# Log file: D:/ele_match/FPGA_filter/filter_lowpass/vivado.log
+# Journal file: D:/ele_match/FPGA_filter/filter_lowpass\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/share_daily/FPGA_filter_pro/filter_lowpass/filter_lowpass.xpr
+open_project D:/ele_match/FPGA_filter/filter_lowpass/filter_lowpass.xpr
 update_compile_order -fileset sources_1
+launch_simulation
+source tb_fir.tcl
+run all
+close_sim
